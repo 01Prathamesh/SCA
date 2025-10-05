@@ -41,3 +41,13 @@ export const deleteStudent = async (id) => {
     throw error;
   }
 };
+
+export const getStudentById = async (id) => {
+  try {
+    const response = await axios.get(`${BASE_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching student with ID ${id}:`, error);
+    throw error;
+  }
+};
