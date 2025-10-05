@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using StudentAPI.Models;
 
 namespace StudentAPI.Data
 {
-    public class DatabaseHelper
+    public class StudentDAL
     {
         private readonly string _connectionString;
 
-        public DatabaseHelper(IConfiguration configuration)
+        public StudentDAL(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
