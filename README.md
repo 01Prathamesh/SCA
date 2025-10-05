@@ -209,16 +209,16 @@ Here is a list of the available API endpoints:
 Here are some screenshots of the application:
 
 1. **Home Page**:
-   ![Home Page](Screenshots/1.png)
+   ![Home Page](./ScreenShots/1.jpg)
 
 2. **Student Not Found**:
-   ![Student Not Found](Screenshots/2.png)
+   ![Student Not Found](./ScreenShots/2.jpg)
 
 3. **Student Found**:
-   ![Student Found](Screenshots/3.png)
+   ![Student Found](./ScreenShots/3.jpg)
 
 4. **Student List**:
-   ![Student List](Screenshots/4.png)
+   ![Student List](./ScreenShots/4.jpg)
 
 5. **Swagger Backend**:
-   ![Swagger Backend](Screenshots/5.png)
+   ![Swagger Backend](./ScreenShots/5.jpg)
