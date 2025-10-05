@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import StudentForm from './components/StudentForm';
 import StudentList from './components/StudentList';
-import { addStudent, updateStudent } from './services/api';
+import SearchStudent from './components/SearchStudent'; // Import the SearchStudent component
+import { addStudent, updateStudent } from './services/api'; // Import your API methods
 import './App.css';
 
 const App = () => {
@@ -28,7 +29,14 @@ const App = () => {
   return (
     <div className="app">
       <h1>Student Management</h1>
+
+      {/* Add the SearchStudent component */}
+      <SearchStudent />
+
+      {/* Form for adding/updating a student */}
       <StudentForm onSave={handleSaveStudent} studentToEdit={studentToEdit} />
+      
+      {/* List of students */}
       <StudentList onEdit={handleEditStudent} />
     </div>
   );
